@@ -8,6 +8,7 @@
     "dialect": "mysql"
   },
   "test": {
+    "url": "mysql://root:root@127.0.0.1/database_test",
     "username": "root",
     "password": "root",
     "database": "database_test",

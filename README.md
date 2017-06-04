@@ -34,3 +34,10 @@ to start server `npm start`.
 - /addresses/:id - GET - get specific people
 - /addresses/:id - PUT update people.
 - /addresses/:id - DELETE delete people.
+
+
+# Postman
+
+Install https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop
+
+import docs `Hacker.postman_collection`

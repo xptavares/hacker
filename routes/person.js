@@ -17,4 +17,33 @@ router.get('/:id', function(req, res, next) {
   })
 });
 
+/* POST create people. */
+router.post('/', function(req, res, next) {
+  models.Person.create(req.body).then(people => {
+    res.json(people)
+  }).catch(err => {
+    res.json(people)
+  })
+});
+
+/* PUT update people. */
+router.put('/:id', function(req, res, next) {
+  const id = req.params.id
+  models.Person.update(req.body, { where: { id: id } }).then(people => {
+    res.json(people)
+  }).catch(err => {
+    res.json(people)
+  })
+});
+
+/* DELETE delete people. */
+router.delete('/:id', function(req, res, next) {
+  const id = req.params.id
+  models.Person.destroy({ where: { id: id } }).then(people => {
+    res.json(people)
+  }).catch(err => {
+    res.json(people)
+  })
+});
+
 module.exports = router;

@@ -16,3 +16,21 @@ next lets seed: `node_modules/.bin/sequelize db:seed:all`
 
 now `npm test` all will be green :)
 to start server `npm start`.
+
+## routes avaliables
+
+#### people
+
+- /people/ - GET - get all persons
+- /people/ - POST - create a people
+- /people/:id - GET - get specific people
+- /people/:id - PUT update people.
+- /people/:id - DELETE delete people.
+
+#### addresses
+
+- /addresses/ - GET - get all addresses
+- /addresses/ - POST - create a people
+- /addresses/:id - GET - get specific people
+- /addresses/:id - PUT update people.
+- /addresses/:id - DELETE delete people.

@@ -11,13 +11,15 @@ chai.should();
 
 let addresses = []
 let address = {}
+let person = {}
 
 describe('People', () => {
     beforeEach((done) => {
         Address.destroy({where: {}}, (err) => {
           done()
         }).then(() => {
-          Person.create({name: 'teste'}).then(person => {
+          Person.create({name: 'teste'}).then(_person => {
+            person = _person.dataValues
             Address.bulkCreate([
               { location: 'RS', personId: person.id },
               { location: 'SC', personId: person.id },
@@ -35,8 +37,11 @@ describe('People', () => {
     });
   describe('/GET addresses', () => {
       it('it should GET all the address', (done) => {
+        console.log("************");
+        console.log(person);
+        console.log("************");
         chai.request(server)
-            .get('/addresses')
+            .get(`/people/${person.id}/addresses`)
             .end((err, res) => {
                 res.should.have.status(200);
                 res.body.should.be.a('array');
@@ -49,7 +54,7 @@ describe('People', () => {
   describe('/GET address', () => {
       it('it should GET specific address', (done) => {
         chai.request(server)
-            .get('/addresses/' + address.id)
+            .get(`/people/${person.id}/addresses/${address.id}`)
             .end((err, res) => {
               res.should.have.status(200);
               res.body.should.be.a('object');
@@ -68,7 +73,7 @@ describe('People', () => {
             location: "Test"
         }
         chai.request(server)
-            .post('/addresses')
+            .post(`/people/${person.id}/addresses`)
             .send(address)
             .end((err, res) => {
                 res.should.have.status(200);
@@ -89,7 +94,7 @@ describe('People', () => {
           location: "New Test"
       }
       chai.request(server)
-          .put('/addresses/' + address.id)
+          .put(`/people/${person.id}/addresses/${address.id}`)
           .send(_address)
           .end((err, res) => {
               res.should.have.status(200);
@@ -107,7 +112,7 @@ describe('People', () => {
     describe('/DELETE address', () => {
       it('it should remove one address from db', (done) => {
         chai.request(server)
-            .delete('/addresses/' + address.id)
+            .delete(`/people/${person.id}/addresses/${address.id}`)
             .end((err, res) => {
                 res.should.have.status(200);
                 Address.count().then(count => {

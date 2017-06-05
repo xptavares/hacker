@@ -29,11 +29,11 @@ to start server `npm start`.
 
 #### addresses
 
-- /addresses/ - GET - get all addresses
-- /addresses/ - POST - create a people
-- /addresses/:id - GET - get specific people
-- /addresses/:id - PUT update people.
-- /addresses/:id - DELETE delete people.
+- /people/:personId/addresses/ - GET - get all addresses
+- /people/:personId/addresses/ - POST - create a people
+- /people/:personId/addresses/:id - GET - get specific people
+- /people/:personId/addresses/:id - PUT update people.
+- /people/:personId/addresses/:id - DELETE delete people.
 
 
 # Postman

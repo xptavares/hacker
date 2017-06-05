@@ -46,7 +46,7 @@
 					"enabled": true
 				}
 			],
-			"url": "localhost:3000/addresses/1",
+			"url": "localhost:3000/people/1/addresses/3",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -57,7 +57,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1496610131136,
+			"time": 1496621093137,
 			"name": "localhost:3000/addresses/1",
 			"description": "delete addresses",
 			"collectionId": "a9471df7-456a-5221-11d3-c70150e66941",
@@ -121,7 +121,7 @@
 			"id": "486ca223-8fb6-10bf-ad76-5bbf45705714",
 			"headers": "",
 			"headerData": [],
-			"url": "localhost:3000/addresses/1",
+			"url": "localhost:3000/people/1/addresses/3",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -133,8 +133,8 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1496609918561,
-			"name": "localhost:3000/addresses/1",
+			"time": 1496621078113,
+			"name": "localhost:3000/people/1/addresses/1",
 			"description": "Index - List all addresses",
 			"collectionId": "a9471df7-456a-5221-11d3-c70150e66941",
 			"responses": []
@@ -143,7 +143,7 @@
 			"id": "677293c7-17f7-6d2d-c6a9-825c25c11b9c",
 			"headers": "",
 			"headerData": [],
-			"url": "localhost:3000/addresses",
+			"url": "localhost:3000/people/1/addresses",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -155,8 +155,8 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1496609813571,
-			"name": "localhost:3000/addresses",
+			"time": 1496621052232,
+			"name": "localhost:3000/people/1/addresses",
 			"description": "Index - List all addresses",
 			"collectionId": "a9471df7-456a-5221-11d3-c70150e66941",
 			"responses": []
@@ -172,7 +172,7 @@
 					"enabled": true
 				}
 			],
-			"url": "localhost:3000/addresses/1",
+			"url": "localhost:3000/people/1/addresses/3",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -183,7 +183,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1496610067944,
+			"time": 1496621082841,
 			"name": "localhost:3000/addresses/1",
 			"description": "update addresses",
 			"collectionId": "a9471df7-456a-5221-11d3-c70150e66941",
@@ -254,7 +254,7 @@
 					"enabled": true
 				}
 			],
-			"url": "localhost:3000/addresses",
+			"url": "localhost:3000/people/1/addresses",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -265,12 +265,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1496609899905,
-			"name": "localhost:3000/addresses",
+			"time": 1496621026656,
+			"name": "localhost:3000/people/1/addresses",
 			"description": "create addresses",
 			"collectionId": "a9471df7-456a-5221-11d3-c70150e66941",
 			"responses": [],
-			"rawModeData": "{\n\t\"location\": \"Here\",\n\t\"personId\": 1\n}"
+			"rawModeData": "{\n\t\"location\": \"Here\"\n}"
 		},
 		{
 			"id": "cb631384-dec5-8409-6033-c431707c831b",
